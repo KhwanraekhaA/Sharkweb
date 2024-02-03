@@ -1,4 +1,4 @@
-from flask import *
+from flask import Flask,render_template,send_from_directory,request,url_for,redirect
 from predict import SHARK_DETECTION
 from datetime import datetime
 import os
