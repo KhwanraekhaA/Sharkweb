@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__, template_folder='template')
 # ใส่ path ของ model ของเรา
-pred = SHARK_DETECTION('D:/Senoir Proj/yolo webapp/best.pt')
+pred = SHARK_DETECTION(r'D:/Senoir Proj/yolo webapp/best.pt')
 
 @app.route('/public/<path:path>')
 def send_report(path):
